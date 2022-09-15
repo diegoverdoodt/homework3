@@ -22,7 +22,7 @@ public class Actions {
     @Autowired
     ContactRepository contactRepository;
     @Autowired
-    LeadRespository leadRepository;
+    LeadRepository leadRepository;
     @Autowired
     OpportunityRepository opportunityRepository;
     @Autowired
@@ -160,7 +160,7 @@ public class Actions {
                 "\nEnter the name of the SalesRep:");
 
 
-        SalesRep salesRep = salesRepRepository.findSalesRepByName(clientData.get(4));
+        SalesRep salesRep = salesRepRepository.findSalesRepsByName(clientData.get(4));
         Lead lead = new Lead(clientData.get(0), clientData.get(1), clientData.get(2), clientData.get(3),  salesRep);
         leadsMap.put(lead.getId(), lead);
         leadRepository.save(lead);
@@ -309,7 +309,7 @@ public class Actions {
             //if answer is incorrect, it does "while true" and repeats printing the question.
             do {
                 System.out.println(question);
-            answer = scanner.nextLine();
+                answer = scanner.nextLine();
             } while (!isCorrect(question, answer));
             inputData.add(answer);
         }

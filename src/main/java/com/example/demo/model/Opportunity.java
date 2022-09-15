@@ -1,4 +1,3 @@
-
 package com.example.demo.model;
 
 import javax.persistence.*;
@@ -111,6 +110,3 @@ public class Opportunity {
         this.salesRep = salesRep;
     }
 }
-
-
-

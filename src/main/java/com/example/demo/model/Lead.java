@@ -1,6 +1,5 @@
 package com.example.demo.model;
 
-
 public class Lead {
     private int id;
     private String name;

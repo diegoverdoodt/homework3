@@ -1,7 +1,6 @@
 package com.example.demo.model;
 
 public class SalesRep {
-
     private int id;
 
     private String name;

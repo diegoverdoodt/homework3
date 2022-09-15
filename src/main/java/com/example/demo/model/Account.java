@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
 public class Account {
-
     enum Industry {
         PRODUCE,
         ECOMMERCE,
